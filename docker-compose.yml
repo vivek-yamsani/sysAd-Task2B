@@ -11,6 +11,17 @@ services:
         ports: 
             - "3306:3306"
  
+    phpmyadmin:
+        image: phpmyadmin
+        restart: always
+        links: 
+            - database
+        environment: 
+            PMA_HOST: database
+            PMA_PASSWORD: Secret
+        ports: 
+            - "8080:80"  
+
     server:
         build: 
             context: .
