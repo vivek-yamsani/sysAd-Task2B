@@ -22,4 +22,6 @@
 # for Task-2B
 
 ### Step-7: executing hostConf.sh to enable reverse proxy on host
-         ./hostConf.sh
+         ./hostConf.sh 
+### Username to login is superuser
+### Password - superuserpass
