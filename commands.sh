@@ -13,10 +13,6 @@ sudo /bin/bash -c 'echo "30 0 * * * root /home/jay_jay/schedule.sh" >> /etc/cron
 
 mv /root/getMoM.sh /home/jay_jay/getMoM.sh
 
-mkdir /home/temp
-mv /root/MoMs.txt /home/temp/MoMs.txt
-mv /root/making\ db.sql  /home/temp/making_db.sql
-
 cd /home/jay_jay
 
 chown jay_jay attendance.sh attendance.log getMoM.sh schedule.sh 

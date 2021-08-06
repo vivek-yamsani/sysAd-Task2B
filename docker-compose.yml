@@ -6,7 +6,7 @@ services:
         environment: 
             MYSQL_ROOT_PASSWORD: passworddelta
         volumes: 
-            - data:/var/lib/
+            - ./MoMs:/var/lib/
             - mysqldata:/var/lib/mysql
         ports: 
             - "3306:3306"
@@ -32,8 +32,6 @@ services:
         ports:
             - "8000:80"
         volumes: 
-            - data:/home/temp
             - ./app/:/var/www/html/
 volumes: 
-    data:
     mysqldata:
